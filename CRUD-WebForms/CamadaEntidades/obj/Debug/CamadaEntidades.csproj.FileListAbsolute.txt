@@ -1,0 +1,5 @@
+C:\Users\almei\Projetos\crud-web-forms\CRUD-WebForms\CamadaEntidades\bin\Debug\CamadaEntidades.dll
+C:\Users\almei\Projetos\crud-web-forms\CRUD-WebForms\CamadaEntidades\bin\Debug\CamadaEntidades.pdb
+C:\Users\almei\Projetos\crud-web-forms\CRUD-WebForms\CamadaEntidades\obj\Debug\CamadaEntidades.csprojResolveAssemblyReference.cache
+C:\Users\almei\Projetos\crud-web-forms\CRUD-WebForms\CamadaEntidades\obj\Debug\CamadaEntidades.dll
+C:\Users\almei\Projetos\crud-web-forms\CRUD-WebForms\CamadaEntidades\obj\Debug\CamadaEntidades.pdb

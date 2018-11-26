@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRUD-WebForms", "CRUD-WebForms\CRUD-WebForms.csproj", "{B09B5061-8341-4E99-B2C9-B1019B059212}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CamadaEntidades", "CamadaEntidades\CamadaEntidades.csproj", "{73C04C68-09A4-413A-A013-F034BBDB9918}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CamadaAcessoDados", "CamadaAcessoDados\CamadaAcessoDados.csproj", "{E91602A4-256F-42C2-B74E-3A3F1D48EF37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CamadaNegocio", "CamadaNegocio\CamadaNegocio.csproj", "{100E5105-96DC-47CF-B98E-4ABB7950CC11}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B09B5061-8341-4E99-B2C9-B1019B059212}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B09B5061-8341-4E99-B2C9-B1019B059212}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B09B5061-8341-4E99-B2C9-B1019B059212}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B09B5061-8341-4E99-B2C9-B1019B059212}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73C04C68-09A4-413A-A013-F034BBDB9918}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73C04C68-09A4-413A-A013-F034BBDB9918}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73C04C68-09A4-413A-A013-F034BBDB9918}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73C04C68-09A4-413A-A013-F034BBDB9918}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E91602A4-256F-42C2-B74E-3A3F1D48EF37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E91602A4-256F-42C2-B74E-3A3F1D48EF37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E91602A4-256F-42C2-B74E-3A3F1D48EF37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E91602A4-256F-42C2-B74E-3A3F1D48EF37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{100E5105-96DC-47CF-B98E-4ABB7950CC11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{100E5105-96DC-47CF-B98E-4ABB7950CC11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{100E5105-96DC-47CF-B98E-4ABB7950CC11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{100E5105-96DC-47CF-B98E-4ABB7950CC11}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

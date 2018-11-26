@@ -1,0 +1,7 @@
+C:\Users\almei\Projetos\crud-web-forms\CRUD-WebForms\CamadaAcessoDados\bin\Debug\CamadaAcessoDados.dll
+C:\Users\almei\Projetos\crud-web-forms\CRUD-WebForms\CamadaAcessoDados\bin\Debug\CamadaAcessoDados.pdb
+C:\Users\almei\Projetos\crud-web-forms\CRUD-WebForms\CamadaAcessoDados\obj\Debug\CamadaAcessoDados.csprojResolveAssemblyReference.cache
+C:\Users\almei\Projetos\crud-web-forms\CRUD-WebForms\CamadaAcessoDados\obj\Debug\CamadaAcessoDados.dll
+C:\Users\almei\Projetos\crud-web-forms\CRUD-WebForms\CamadaAcessoDados\obj\Debug\CamadaAcessoDados.pdb
+C:\Users\almei\Projetos\crud-web-forms\CRUD-WebForms\CamadaAcessoDados\bin\Debug\CamadaEntidades.dll
+C:\Users\almei\Projetos\crud-web-forms\CRUD-WebForms\CamadaAcessoDados\bin\Debug\CamadaEntidades.pdb
