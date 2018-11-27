@@ -7,3 +7,12 @@ C:\Users\almei\Projetos\crud-web-forms\CRUD-WebForms\CamadaNegocio\bin\Debug\Cam
 C:\Users\almei\Projetos\crud-web-forms\CRUD-WebForms\CamadaNegocio\bin\Debug\CamadaEntidades.dll
 C:\Users\almei\Projetos\crud-web-forms\CRUD-WebForms\CamadaNegocio\bin\Debug\CamadaAcessoDados.pdb
 C:\Users\almei\Projetos\crud-web-forms\CRUD-WebForms\CamadaNegocio\bin\Debug\CamadaEntidades.pdb
+C:\Users\mpalmeida\Projetos\crud-web-forms\CRUD-WebForms\CamadaNegocio\bin\Debug\CamadaNegocio.dll
+C:\Users\mpalmeida\Projetos\crud-web-forms\CRUD-WebForms\CamadaNegocio\bin\Debug\CamadaNegocio.pdb
+C:\Users\mpalmeida\Projetos\crud-web-forms\CRUD-WebForms\CamadaNegocio\bin\Debug\CamadaAcessoDados.dll
+C:\Users\mpalmeida\Projetos\crud-web-forms\CRUD-WebForms\CamadaNegocio\bin\Debug\CamadaEntidades.dll
+C:\Users\mpalmeida\Projetos\crud-web-forms\CRUD-WebForms\CamadaNegocio\bin\Debug\CamadaAcessoDados.pdb
+C:\Users\mpalmeida\Projetos\crud-web-forms\CRUD-WebForms\CamadaNegocio\bin\Debug\CamadaEntidades.pdb
+C:\Users\mpalmeida\Projetos\crud-web-forms\CRUD-WebForms\CamadaNegocio\obj\Debug\CamadaNegocio.csprojResolveAssemblyReference.cache
+C:\Users\mpalmeida\Projetos\crud-web-forms\CRUD-WebForms\CamadaNegocio\obj\Debug\CamadaNegocio.dll
+C:\Users\mpalmeida\Projetos\crud-web-forms\CRUD-WebForms\CamadaNegocio\obj\Debug\CamadaNegocio.pdb
