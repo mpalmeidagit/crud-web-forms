@@ -1,0 +1,115 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Home.master.cs" Inherits="CRUD_WebForms.Home" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>::.. CRUD ..::</title>
+
+    <link href="/css/estilo.css" rel="stylesheet" type="text/css">
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand logo" href="/paginas/index.aspx">CRUD</a>
+            </div>
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row-fluid">
+
+            <div class="col-sm-3">
+
+                <!-- menu navegação lateral -->
+                <div class="panel panel-primary">
+                    <div id="colGroup1" role="tab" class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#colListGroup1" aria-controls="colListGroup1" aria-expanded="false" data-toggle="collapse">Cadastrar
+                            </a>
+                        </h4>
+                    </div>
+                    <div role="tabpanel" class="panel-collapse collapse" id="colListGroup1" aria-expanded="false">
+                        <ul class="list-group">
+                            <li class="list-group-item"><a href="/paginas/CadastrarCliente.aspx">Cliente</a></li>
+                            <li class="list-group-item"><a href="#">Serviço</a></li>
+                            <li class="list-group-item"><a href="#">Recibo</a></li>
+                        </ul>
+                        <div class="panel-footer"></div>
+                    </div>
+                </div>
+                <!-- /.menu navegação lateral -->
+
+                <!-- menu navegação lateral -->
+                <div class="panel panel-primary">
+                    <div id="colGroup2" role="tab" class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#colListGroup2" aria-controls="colListGroup2" aria-expanded="false" data-toggle="collapse">Consultar
+                            </a>
+                        </h4>
+                    </div>
+                    <div role="tabpanel" class="panel-collapse collapse" id="colListGroup2" aria-expanded="false">
+                        <ul class="list-group">
+                            <li class="list-group-item"><a href="#">Cliente</a></li>
+                            <li class="list-group-item"><a href="#">Serviço</a></li>
+                            <li class="list-group-item"><a href="#">Recibo</a></li>
+                        </ul>
+                        <div class="panel-footer"></div>
+                    </div>
+                </div>
+                <!-- /.menu navegação lateral -->
+
+                 <!-- menu navegação lateral -->
+                <div class="panel panel-primary">
+                    <div id="colGroup3" role="tab" class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#colListGroup3" aria-controls="colListGroup3" aria-expanded="false" data-toggle="collapse">Relatório
+                            </a>
+                        </h4>
+                    </div>
+                    <div role="tabpanel" class="panel-collapse collapse" id="colListGroup3" aria-expanded="false">
+                        <ul class="list-group">
+                            <li class="list-group-item"><a href="#">Cliente</a></li>
+                            <li class="list-group-item"><a href="#">Serviço</a></li>
+                            <li class="list-group-item"><a href="#">Recibo</a></li>
+                        </ul>
+                        <div class="panel-footer"></div>
+                    </div>
+                </div>
+                <!-- /.menu navegação lateral -->
+
+            </div>
+
+
+            <div class="col-sm-9">
+                <div class="conteudo_painel">
+                    <div class="conteudo_painel_int">
+                        <form id="form1" runat="server">
+                            <asp:ContentPlaceHolder ID="contentBody" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/main.js"></script>
+    <asp:ContentPlaceHolder ID="footer" runat="server"></asp:ContentPlaceHolder>
+</body>
+</html>
