@@ -46,3 +46,5 @@ C:\Users\mpalmeida\Projetos\crud-web-forms\CRUD-WebForms\CRUD-WebForms\bin\Micro
 C:\Users\mpalmeida\Projetos\crud-web-forms\CRUD-WebForms\CRUD-WebForms\obj\Debug\CRUD-WebForms.csprojResolveAssemblyReference.cache
 C:\Users\mpalmeida\Projetos\crud-web-forms\CRUD-WebForms\CRUD-WebForms\obj\Debug\CRUD-WebForms.dll
 C:\Users\mpalmeida\Projetos\crud-web-forms\CRUD-WebForms\CRUD-WebForms\obj\Debug\CRUD-WebForms.pdb
+C:\Users\mpalmeida\Projetos\crud-web-forms\CRUD-WebForms\CRUD-WebForms\bin\CamadaAcessoDados.dll
+C:\Users\mpalmeida\Projetos\crud-web-forms\CRUD-WebForms\CRUD-WebForms\bin\CamadaAcessoDados.pdb
