@@ -5,31 +5,44 @@
 }
 
 body {
-    background: url(../imgs/old_moon.png);   
+    background: url(../imgs/old_moon.png);
     padding-top: 80px;
 }
 
-.logo{
-    margin-left:15px !important;
-    font-size:1.5em !important;
-    font-weight:bold;
+.logo {
+    margin-left: 15px !important;
+    font-size: 1.5em !important;
+    font-weight: bold;
 }
 
 
 .panel {
-    margin-bottom: 2px;   
+    margin-bottom: 2px;
 }
 
 .conteudo_painel {
-    background: white;   
-    border-radius:5px;
-    border:1px solid #eee;
+    background: white;
+    border-radius: 5px;
+    border: 1px solid #eee;
     box-shadow: 2px 2px 5px #888;
-    min-height:835px;
-    height:auto;
-    margin-bottom:30px;
+    min-height: 835px;
+    height: auto;
+    margin-bottom: 30px;
 }
 
 .conteudo_painel_int {
-    padding: 12px;   
+    padding: 12px;
+}
+
+.sem_padding_left_right {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.sem_padding_right {
+    padding-right: 0px !important;
+}
+
+.sem_padding_left {
+    padding-left: 0px !important;
 }
