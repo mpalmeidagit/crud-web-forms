@@ -26,12 +26,11 @@ namespace CamadaAcessoDados
             return objCliente;
         }
 
-        public EntidadeCliente SalvarCliente(EntidadeCliente objCliente)
+        public bool SalvarCliente(EntidadeCliente objCliente)
         {
             SqlConnection conexao = null;
             SqlCommand cmd = null;
-            SqlDataReader dr = null;
-            EntidadeCliente objClientes = null;
+            bool resposta = false;
 
             try
             {
@@ -49,25 +48,14 @@ namespace CamadaAcessoDados
                 cmd.CommandType = CommandType.StoredProcedure;
 
                 conexao.Open();
-                dr = cmd.ExecuteReader();
-                if (dr.Read())
-                {
-                    objCliente = new EntidadeCliente()
-                    {                        
-                        Nome = dr["nome"].ToString(),
-                        CPF = dr["cpf"].ToString(),
-                        Telefone = dr["telefone"].ToString(),
-                        CEP = dr["cep"].ToString(),
-                        Estado = dr["estado"].ToString(),
-                        Cidade = dr["cidade"].ToString(),
-                        Bairro = dr["bairro"].ToString(),
-                        Endereco = dr["endereco"].ToString()
-                    };
-                }
+
+                int dados = cmd.ExecuteNonQuery();
+                if (dados > 0) resposta = true;
 
             }
             catch (Exception ex)
             {
+                resposta = false;
                 throw ex;
             }
             finally
@@ -75,7 +63,7 @@ namespace CamadaAcessoDados
                 conexao.Close();
             }
             
-            return objClientes;
+            return resposta;
         }
     }
 }

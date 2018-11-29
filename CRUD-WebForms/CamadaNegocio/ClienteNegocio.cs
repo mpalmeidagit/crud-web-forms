@@ -26,17 +26,16 @@ namespace CamadaNegocio
             return objCliente;
         }
 
-        public EntidadeCliente SalvarCliente(EntidadeCliente objCliente)
-        {     
+        public bool SalvarCliente(EntidadeCliente objCliente)
+        {           
             try
             {
                 return ClienteDAO.getInstancia().SalvarCliente(objCliente);
             }
             catch (Exception ex )
-            {
-                throw ex;
-             
-            }
+            {               
+                throw ex;             
+            }          
            
         }
     }

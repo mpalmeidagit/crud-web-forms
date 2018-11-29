@@ -18,11 +18,9 @@ namespace CRUD_WebForms.paginas
         }
 
         [WebMethod]
-        public static EntidadeCliente SalvarCliente(String campoNome, String campoEmail, String campoCPF, String campoTelefone, String campoCEP, String campoEstado, String campoCidade, String campoBairro, String campoEndereco)
+        public static bool SalvarCliente(String campoNome, String campoEmail, String campoCPF, String campoTelefone, String campoCEP, String campoEstado, String campoCidade, String campoBairro, String campoEndereco)
         {
 
-            try
-            {
                 EntidadeCliente objCliente = new EntidadeCliente()
                 {
                     Nome = campoNome,
@@ -35,12 +33,8 @@ namespace CRUD_WebForms.paginas
                     Bairro = campoBairro,
                     Endereco = campoEndereco
                 };
-                return ClienteNegocio.getInstancia().SalvarCliente(objCliente);
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
+            bool ok = ClienteNegocio.getInstancia().SalvarCliente(objCliente);
+            return ok;          
 
         }
     }

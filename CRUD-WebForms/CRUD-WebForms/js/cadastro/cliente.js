@@ -1,4 +1,7 @@
-﻿// Salvar cliente
+﻿
+var data;
+
+// Salvar cliente
 $("#btnSalvar").on("click", function (e) {
     e.preventDefault();
     var campoNome = $("#txtNome").val();
@@ -66,27 +69,33 @@ $("#btnSalvar").on("click", function (e) {
     }
     else if (campoNome.length > 0 && campoEmail.length > 0 && campoCPF.length > 0 && campoTelefone.length > 0 && campoCEP.length > 0 && campoEstado.length > 0 && campoCidade.length > 0 && campoBairro.length > 0 && campoEndereco.length > 0) {
         var objeto = JSON.stringify({
-            campoNome:       campoNome,
-            campoEmail:      campoEmail,
-            campoCPF:        campoCPF,
-            campoTelefone:   campoTelefone,
-            campoCEP:        campoCEP,
-            campoEstado:     campoEstado,
-            campoCidade:     campoCidade,
-            campoBairro:     campoBairro,
-            campoEndereco:   campoEndereco
+            campoNome: campoNome,
+            campoEmail: campoEmail,
+            campoCPF: campoCPF,
+            campoTelefone: campoTelefone,
+            campoCEP: campoCEP,
+            campoEstado: campoEstado,
+            campoCidade: campoCidade,
+            campoBairro: campoBairro,
+            campoEndereco: campoEndereco
         });
         $.ajax({
             type: "POST",
             url: "/paginas/CadastrarCliente.aspx/SalvarCliente",
             data: objeto,
             contentType: "application/json; charset=utf-8",
-            error: function (xhr, ajaxOptions, thrownError) {
-                console.log(xhr.status + " \n " + xhr.responseText, " \n" + thrownError);
+            error: function (response) {
+                var r = jQuery.parseJSON(response.responseText);
+                swal({
+                    type: 'error',
+                    position: 'top',
+                    title: 'Aviso',
+                    text: r.Message,
+                })
+                return false;
             },
             success: function (data) {
-                console.log(data);
-                if (data.d) {                  
+                if (data.d) {
                     LimparCampos();
                     swal({
                         position: 'top',
@@ -96,18 +105,17 @@ $("#btnSalvar").on("click", function (e) {
                         timer: 2500
                     })
                 }
-                else {
-                    swal({
-                        type: 'error',
-                        position: 'top',
-                        title: 'Aviso',
-                        text: 'Não foi possivel cadastar novo registro!',
-                    })
-                }
             }
         });
+
+    } else {
+        swal({
+            type: 'error',
+            position: 'top',
+            title: 'Aviso',
+            text: 'Não foi possivel cadastar novo registro!',
+        })
     }
-      
 });
 
 // Limpar Campos
@@ -145,7 +153,7 @@ $(function ($) {
             $("input#txtEstado").val(result.state);
             $("input#txtCidade").val(result.city);
             $("input#txtBairro").val(result.district);
-            $("input#txtEndereco").val(result.address);         
+            $("input#txtEndereco").val(result.address);
         });
     });
 });
