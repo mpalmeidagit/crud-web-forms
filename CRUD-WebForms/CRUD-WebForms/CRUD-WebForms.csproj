@@ -85,6 +85,8 @@
     <Content Include="imgs\old_moon.png" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\cadastro\comum.js" />
+    <Content Include="js\cadastro\editar_cliente.js" />
     <Content Include="js\cadastro\cliente.js" />
     <Content Include="js\jquery.min.js" />
     <Content Include="js\main.js" />
@@ -113,6 +115,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="paginas\CadastrarCliente.aspx" />
+    <Content Include="paginas\ConsultarCliente.aspx" />
     <Content Include="paginas\index.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -132,6 +135,13 @@
     </Compile>
     <Compile Include="paginas\CadastrarCliente.aspx.designer.cs">
       <DependentUpon>CadastrarCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paginas\ConsultarCliente.aspx.cs">
+      <DependentUpon>ConsultarCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="paginas\ConsultarCliente.aspx.designer.cs">
+      <DependentUpon>ConsultarCliente.aspx</DependentUpon>
     </Compile>
     <Compile Include="paginas\index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>

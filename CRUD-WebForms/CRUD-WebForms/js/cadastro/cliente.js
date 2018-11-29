@@ -1,4 +1,5 @@
 ﻿
+// Variaveis global
 var data;
 
 // Salvar cliente
@@ -158,15 +159,3 @@ $(function ($) {
     });
 });
 
-// Colocar mascaras no campos
-$(document).ready(function () {
-    $('#txtCPF').mask('000.000.000-00');
-    $('#txtTelefone').mask('(00) 00000-0000');
-    $('#txtCEP').mask('00000-000');
-});
-
-// Validar e-mail
-function ValidarEmail($email) {
-    var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
-    return emailReg.test($email);
-}

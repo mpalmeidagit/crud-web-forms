@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="contentBody" runat="server">
-     <div class="col-md-12">
+    <div class="col-md-12">
         <div class="well">
             <h1 class="panel-title">Cadastrar Cliente</h1>
         </div>
@@ -58,7 +58,7 @@
         </div>
     </div>
 
-     <div class="col-md-12">
+    <div class="col-md-12">
         <div class="well well-sm">
             <asp:Button ID="btnSalvar" runat="server" Text="Salvar" CssClass="btn btn-success btn-lg" />&nbsp;&nbsp;
             <asp:Button ID="btnCancelar" runat="server" Text="Cancelar" CssClass="btn btn-danger btn-lg" />
@@ -68,4 +68,20 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="footer" runat="server">
     <script src="../js/cadastro/cliente.js"></script>
+
+    <script type="text/javascript">
+
+        // Colocar mascaras no campos
+        $(document).ready(function () {
+            $('#txtCPF').mask('000.000.000-00');
+            $('#txtTelefone').mask('(00) 00000-0000');
+            $('#txtCEP').mask('00000-000');
+        });
+
+        // Validar e-mail
+        function ValidarEmail($email) {
+            var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+            return emailReg.test($email);
+        }
+    </script>
 </asp:Content>

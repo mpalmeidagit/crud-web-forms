@@ -12,12 +12,14 @@
     <link href="/css/estilo.css" rel="stylesheet" type="text/css">
     <link href="/css/sweetalert2/sweetalert2.min.css" rel="stylesheet" />
 
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
     <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-
+    <script src="/js/jquery.min.js"></script>
 
     <asp:ContentPlaceHolder ID="head" runat="server">
+
     </asp:ContentPlaceHolder>
 </head>
 <body>
@@ -65,7 +67,7 @@
                     </div>
                     <div role="tabpanel" class="panel-collapse collapse" id="colListGroup2" aria-expanded="false">
                         <ul class="list-group">
-                            <li class="list-group-item"><a href="#">Cliente</a></li>
+                            <li class="list-group-item"><a href="/paginas/ConsultarCliente.aspx">Cliente</a></li>
                             <li class="list-group-item"><a href="#">Serviço</a></li>
                             <li class="list-group-item"><a href="#">Recibo</a></li>
                         </ul>
@@ -74,7 +76,7 @@
                 </div>
                 <!-- /.menu navegação lateral -->
 
-                 <!-- menu navegação lateral -->
+                <!-- menu navegação lateral -->
                 <div class="panel panel-primary">
                     <div id="colGroup3" role="tab" class="panel-heading">
                         <h4 class="panel-title">
@@ -108,11 +110,14 @@
             </div>
         </div>
     </div>
-    <script src="/js/jquery.min.js"></script>
+        
     <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/main.js"></script>
     <script src="/js/plugins/sweetalert2/sweetalert2.min.js"></script>
+    <script src="/js/main.js"></script>
+
     <script src="/js/plugins/jquery-mask/jquery.mask.js"></script>
+
+       <script src="/js/plugins/datatables/jquery.dataTables.js"></script>
     <asp:ContentPlaceHolder ID="footer" runat="server"></asp:ContentPlaceHolder>
 </body>
 </html>
